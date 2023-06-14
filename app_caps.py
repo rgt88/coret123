@@ -7,7 +7,7 @@ st.set_page_config(
 )
 
 # Load the XGBoost model from the .sav file
-model = joblib.load('xgboost_model.sav')
+model = joblib.load('xgboost_model_1.sav')
 
 # Define the Streamlit app
 def main():
