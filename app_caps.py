@@ -49,7 +49,9 @@ def main():
     prediction = model.predict(input_df)
 
     # Display the predicted price
-    st.write("Predicted Price: $", prediction[0])
+    st.write(f"Predicted Price: ${round(prediction[0])}")
+    st.write (f"with upper base: ${round(prediction[0])+38515}")
+    st.write (f"with lower base: ${round(prediction[0])-38515}" )
 
 # Run the app
 if __name__ == "__main__":
